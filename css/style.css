@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+}
+
+.mapa {
+    position: relative;
+    width: 40%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 200px auto;
+    background: linear-gradient(#87ceeb, #E6F6FF);
+    border-bottom: 15px solid rgb(3, 194, 3);
+}
+
+.tubo {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    animation: animacao-tubo 1.1s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    bottom: 0px;
+    width: 180px;
+}
+
+.pulo {
+    animation: pulo 600ms ease-out;
+}
+
+.nuvens {
+    margin-top: 100px;
+    width: 300px;
+    position: absolute;
+    animation: animacao-nuvens 20s infinite linear;
+}
+
+.gameover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes animacao-tubo {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 140px;
+    }
+
+    50% {
+        bottom: 160px;
+    }
+
+    60% {
+        bottom: 140px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes animacao-nuvens {
+    from {
+        right: -40%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
