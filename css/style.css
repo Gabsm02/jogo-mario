@@ -34,7 +34,7 @@ body {
 }
 
 .pulo {
-    animation: pulo 700ms ease-out;
+    animation: pulo 600ms ease-out;
 }
 
 .nuvens {
@@ -73,7 +73,7 @@ body {
     }
 
     50% {
-        bottom: 40%;
+        bottom: 50%;
     }
 
     60% {
